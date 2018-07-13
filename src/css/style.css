@@ -1,0 +1,54 @@
+.astroWeightProject {
+  background-image: url('/images/solarSystemBackground.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 100%;
+  padding: 20px;
+}
+
+#astroHeader {
+  color: white;
+  text-align: left;
+  border-bottom: 1px solid white;
+  margin-bottom: 2em;
+  margin-top: 1rem;
+}
+
+.astroLabels {
+  color: white;
+  font-weight: none;
+}
+#astroForm {
+  margin-top: 2rem;
+}
+#astroCalculate {
+  border-radius: 8px;
+  position: absolute;  
+}
+.checkForm { 
+  padding: 0;
+  margin-top: 35px;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;  
+}
+#formCheck {
+  margin-right: 1rem;
+}
+#astroOutput {
+  color: black;
+  background-color: lightgrey;
+  font-size: cover;
+  border-radius: 8px;
+  font-weight: bold;
+  border: solid 1px grey;
+  padding: 30px;
+  margin-top: 40px;
+  text-align: center;
+  height: 100px;
+
+}
+
+
+
