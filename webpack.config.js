@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    javascript: './src/js/index.jsx'
+    javascript: './src/js/index.js'
   },
   output: {
     filename: 'bundle.js',
@@ -16,6 +16,7 @@ module.exports = {
     }, 
     extensions: ['.js', '.jsx']
   },
+  mode: "development",
   module: {
     rules: [
       {
