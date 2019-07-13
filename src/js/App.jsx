@@ -76,8 +76,8 @@ export default class App extends Component {
           <form onSubmit = {this.submit} id = 'astroForm'>
 
             <div className='form-row align-items-center '>
-
-              <div className='form-group col-3'>
+          
+              <div className='form-group col-lg-3 col-sm-12'>
                 <label
                   htmlFor='inputWeight'
                   className='astroLabels'>
@@ -93,7 +93,7 @@ export default class App extends Component {
                   pattern = '^([1-9]+)([0-9]*)(\.[0-9]{0,2})?$' />
               </div>
 
-              <div className='form-group col-3'>
+              <div className='form-group col-lg-3 col-sm-12'>
                 <label
                   className='astroLabels'>
                   Select A Planet
@@ -116,7 +116,7 @@ export default class App extends Component {
                 </select>
               </div>
 
-              <div className='form-group checkGroup col-3'>
+              <div className='form-group checkGroup col-lg-3 col-sm-12'>
                 <div className="form-check checkForm">
                   <input
                     type='checkbox'
@@ -131,7 +131,7 @@ export default class App extends Component {
                 </div>
               </div>
 
-              <div className='form-group col-3'>
+              <div className='form-group col-lg-3 col-sm-12'>
               {(this.state.weight.length > 0) ? <button
                   className='btn btn-primary form-control' type='submit' id='astroCalculate'> Calculate </button> : <button
                   className='btn btn-primary form-control' type='submit' id='astroCalculate' disabled>
@@ -139,12 +139,14 @@ export default class App extends Component {
                 </button>}
               </div>
             </div>
-          </form>
           <div className="row">
-            <div className="col-12" id='astroOutput'>
+            <div className="form-group col-lg-12" id='astroOutput' >
+                
                 {(this.state.newWeight) ? message : ''}
+                
             </div>
           </div>
+          </form>
         </div>
       </div>
     )

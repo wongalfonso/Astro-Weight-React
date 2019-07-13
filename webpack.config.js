@@ -9,7 +9,6 @@ module.exports = {
     path: path.join(__dirname, '/dist'),
     publicPath: '/'
   },
-  devtool: 'source-map',
   resolve: {
     alias: {
       react: path.join(__dirname, 'node_modules', 'react')
